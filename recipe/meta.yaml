@@ -1,13 +1,14 @@
 {% set name = "enstat" %}
-{% set version = "0.3.0" %}
+{% set org = "tdegeus" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/tdegeus/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 5de88eea6df90624257275207fa5c31a4cb7abc69568f94b34bfd387c6855793
+  url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: 9fadc32f6376bcc083b24a4833648c48ef782b64fb31d799c1564426667a8262
 
 build:
   number: 0
@@ -17,30 +18,30 @@ build:
 
 requirements:
   host:
-    - python >=3
     - pip
+    - python >=3
     - setuptools_scm
   run:
-    - python >=3
     - numpy
+    - python >=3
 
 test:
   imports:
-    - enstat
+    - {{ name }}
   commands:
     - pip check
   requires:
     - pip
 
 about:
-  home: https://github.com/tdegeus/{{ name }}
+  home: https://github.com/{{ org }}/{{ name }}
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Iterative ensemble averages
   description: Iterative ensemble averages
-  doc_url: https://github.com/tdegeus/{{ name }}
-  dev_url: https://github.com/tdegeus/{{ name }}
+  doc_url: https://github.com/{{ org }}/{{ name }}
+  dev_url: https://github.com/{{ org }}/{{ name }}
 
 extra:
   recipe-maintainers:
