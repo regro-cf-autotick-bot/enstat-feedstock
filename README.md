@@ -11,7 +11,7 @@ Summary: Iterative ensemble averages
 
 Development: https://github.com/tdegeus/enstat
 
-Documentation: https://github.com/tdegeus/enstat
+Documentation: https://enstat.readthedocs.io/
 
 Iterative ensemble averages
 
