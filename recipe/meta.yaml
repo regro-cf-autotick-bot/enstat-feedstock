@@ -1,6 +1,6 @@
 {% set name = "enstat" %}
 {% set org = "tdegeus" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 39ee920b580af9913c633807e53176a1e5302f03695e4735b3e6d06a3179e8d8
+  sha256: f82457e7a15364a849fc676e5418a446c5d592452ec7ae00cb930da344077a57
 
 build:
   number: 0
